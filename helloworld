@@ -1,0 +1,11 @@
+// The Cloud Functions for Firebase SDK to create Cloud Functions and setup triggers.
+const functions = require('firebase-functions');
+
+// The Firebase Admin SDK to access the Firebase Realtime Database.
+const admin = require('firebase-admin');
+admin.initializeApp(functions.config().firebase);
+//var jStat = require('jstat').jStat;
+//var KalmanFilter = require('kalmanjs').default;
+const geoLib = require('geolib')
+var dbFirestore = admin.firestore();
+var db = admin.database();
